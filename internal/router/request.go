@@ -14,8 +14,6 @@ type Request struct {
 
 type Params map[string]interface{}
 
-type Item interface{}
-
 func (r *RouterGopher) GetRequest(req *http.Request) *Request {
 	request := &Request{
 		path:   req.URL.Path,
